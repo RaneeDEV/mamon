@@ -332,3 +332,44 @@ h2.title,
   padding-bottom: 12px;
 }
 /* =========================== EXPERTISE END ============================== */
+
+/* =========================== COMUNICATION START ============================== */
+.comunication {
+  background-color: var(--lightness-gray);
+  padding: 128px 0;
+}
+.comunication,
+.comunication-inf {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+}
+
+.comunication-inf > :nth-child(n + 2) {
+  width: 770px;
+  margin: 24px 0;
+}
+
+.comunication-inf::after {
+  content: "";
+  position: absolute;
+  bottom: -34px;
+  left: 190px;
+  width: 143px;
+  height: 36px;
+  background: url("../img/stack.webp");
+}
+
+.comunication-inf::before {
+  content: "";
+  position: absolute;
+  bottom: -34px;
+  right: 190px;
+  width: 143px;
+  height: 36px;
+  background: url("../img/trello.webp");
+}
+/* =========================== COMUNICATION END ============================== */
