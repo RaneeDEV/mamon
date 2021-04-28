@@ -162,6 +162,10 @@ table {
 /* =========================== CSS RESET END ============================== */
 
 /* =========================== COMMON START ============================== */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: var(--black);
   font-family: "Gilroy", var(--system-fonts), sans-serif;
@@ -204,6 +208,7 @@ span,
     Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --scrollbar-track-color: hsl(var(--hue), 0%, 87%);
+  --shadow: hsla(var(--hue), 0%, 20%, 0.3);
 }
 
 :focus {
@@ -436,6 +441,7 @@ h2.title,
 .footer {
   background-color: var(--system-color);
   padding: 35px 0;
+  position: relative;
 }
 
 .footer-street-link {
@@ -465,3 +471,22 @@ h2.title,
   transform: scale(1.2);
 }
 /* =========================== FOOTER END ============================== */
+
+/* =========================== TO TOP LINK START ============================== */
+.to-top-link {
+  content: "";
+  position: absolute;
+  top: -10px;
+  right: 100px;
+  background-color: var(--white);
+  color: var(--system-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 30px;
+  width: 40px;
+  height: 40px;
+  box-shadow: 0 -10px 20px 0 var(--shadow);
+}
+/* =========================== TO TOP LINK END ============================== */
