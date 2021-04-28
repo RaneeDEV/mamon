@@ -191,10 +191,17 @@ span,
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
+:focus {
+  outline: 2px solid var(--system-color);
+}
+
 .container {
   width: 1170px;
   max-width: 100%;
   margin: 0 auto;
+}
+h1 {
+  margin-bottom: 24px;
 }
 
 h1,
@@ -227,21 +234,32 @@ h2.title,
   display: flex;
   align-items: center;
   text-align: center;
+  cursor: pointer;
   background-color: var(--system-color);
   font-size: 24px;
   line-height: 1.2;
-  border: 1px solid transparent;
-  border-radius: 0 2px 2px 0;
-  padding: 26px 48px;
+  border: 2px solid transparent;
+  border-radius: 3px 7px 7px 3px;
+  color: var(--white);
+  padding: 20px 38px;
+  transition: 0.25s;
+}
+
+.btn:hover {
+  border: 2px solid var(--system-color);
+  color: var(--system-color);
+  background-color: var(--brithnes-gray);
 }
 
 .input-email {
-  padding: 28px 32px;
-  border-radius: 2px 0 0 2px;
+  min-width: 338px;
+  padding: 24px 32px;
   background-color: var(--brithnes-gray);
   font-size: 20px;
   line-height: 1.2;
-  color: var(--lightness-gray);
+  border: 1px solid transparent;
+  color: var(--black);
+  font-family: "Gilroy";
 }
 /* =========================== COMMON END ============================== */
 
@@ -250,10 +268,34 @@ h2.title,
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 50px 0;
+  padding-top: 52px;
+  padding-bottom: 80px;
 }
 
 .header-mail-link:hover {
   text-decoration: underline;
 }
 /* =========================== HEADER END ============================== */
+
+/* =========================== HERO START ============================== */
+.hero,
+.hero-inf {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.hero-text {
+  width: 800px;
+}
+
+.email-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 65px;
+}
+/* =========================== HERO END ============================== */
