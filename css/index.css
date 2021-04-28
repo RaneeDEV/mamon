@@ -244,3 +244,16 @@ h2.title,
   color: var(--lightness-gray);
 }
 /* =========================== COMMON END ============================== */
+
+/* =========================== HEADER START ============================== */
+.header > .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 0;
+}
+
+.header-mail-link:hover {
+  text-decoration: underline;
+}
+/* =========================== HEADER END ============================== */
