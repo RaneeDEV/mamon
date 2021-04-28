@@ -168,6 +168,20 @@ body {
   background-color: var(--white);
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track-piece {
+  background-color: var(--scrollbar-track-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--system-color);
+  box-shadow: 0 -4px 0 0 var(--system-color), 0 4px 0 0 var(--system-color);
+  border-radius: 999px;
+}
+
 a,
 span,
 ::before,
@@ -189,6 +203,7 @@ span,
   --system-fonts: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
     Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --scrollbar-track-color: hsl(var(--hue), 0%, 87%);
 }
 
 :focus {
@@ -412,8 +427,8 @@ h2.title,
   margin-left: 26px;
 }
 
-.socials-box-wrapper a{
-    transition: .25s;
+.socials-box-wrapper a {
+  transition: 0.25s;
 }
 
 .socials-box-wrapper > :hover {
