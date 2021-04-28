@@ -386,3 +386,37 @@ h2.title,
   margin-top: 24px;
 }
 /* =========================== TOGETHER END ============================== */
+
+/* =========================== FOOTER START ============================== */
+.footer {
+  background-color: var(--system-color);
+  padding: 35px 0;
+}
+
+.footer-street-link {
+  color: var(--white);
+}
+
+.footer-street-link:hover {
+  text-decoration: underline;
+}
+
+.footer > .container,
+.socials-box-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.socials-box-wrapper > :nth-child(n + 2) {
+  margin-left: 26px;
+}
+
+.socials-box-wrapper a{
+    transition: .25s;
+}
+
+.socials-box-wrapper > :hover {
+  transform: scale(1.2);
+}
+/* =========================== FOOTER END ============================== */
