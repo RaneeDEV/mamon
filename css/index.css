@@ -299,3 +299,15 @@ h2.title,
   padding-bottom: 65px;
 }
 /* =========================== HERO END ============================== */
+
+/* =========================== BRANDS START ============================== */
+.beands {
+  padding: 175px 0;
+}
+
+.img-box-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* =========================== BRANDS END ============================== */
