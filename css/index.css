@@ -210,8 +210,8 @@ h2.title,
   font-size: 64px;
   font-weight: 700;
   line-height: 1.23;
-  color: var(--black);
   text-align: center;
+  color: var(--black);
 }
 
 .subtitle {
@@ -220,7 +220,6 @@ h2.title,
 
 .text {
   line-height: 1.5;
-  text-align: center;
   color: var(--middle-darkness-gray);
 }
 
@@ -311,3 +310,25 @@ h2.title,
   justify-content: space-between;
 }
 /* =========================== BRANDS END ============================== */
+
+/* =========================== EXPERTISE START ============================== */
+.expertise {
+  padding-bottom: 123px;
+}
+
+.expertise-cards-wrapper {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding-top: 120px;
+}
+
+.expertise-card {
+  min-width: 370px;
+}
+
+.expertise-subtitle {
+  padding-top: 32px;
+  padding-bottom: 12px;
+}
+/* =========================== EXPERTISE END ============================== */
