@@ -336,7 +336,8 @@ h2.title,
 /* =========================== COMUNICATION START ============================== */
 .comunication {
   background-color: var(--lightness-gray);
-  padding: 128px 0;
+  padding-top: 128px;
+  padding-bottom: 65px;
 }
 .comunication,
 .comunication-inf {
@@ -373,3 +374,15 @@ h2.title,
   background: url("../img/trello.webp");
 }
 /* =========================== COMUNICATION END ============================== */
+
+/* =========================== TOGETHER START ============================== */
+.together {
+  text-align: center;
+  padding-top: 195px;
+  padding-bottom: 130px;
+}
+
+.together-inf > :nth-child(n + 2) {
+  margin-top: 24px;
+}
+/* =========================== TOGETHER END ============================== */
