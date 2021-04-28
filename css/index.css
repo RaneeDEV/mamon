@@ -347,17 +347,29 @@ h2.title,
   padding-top: 50px;
   padding-bottom: 65px;
 }
+
+.hero img {
+  width: 830px;
+  height: 430px;
+  object-fit: cover;
+}
 /* =========================== HERO END ============================== */
 
 /* =========================== BRANDS START ============================== */
-.beands {
+.brands {
   padding: 175px 0;
 }
 
-.img-box-wrap {
+.brands-box-wrap {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.brands-box-wrap > img {
+  width: auto;
+  height: 40px;
+  object-fit: cover;
 }
 /* =========================== BRANDS END ============================== */
 
@@ -375,6 +387,12 @@ h2.title,
 
 .expertise-card {
   min-width: 370px;
+}
+
+.expertise-card > img {
+  width: auto;
+  height: auto;
+  object-fit: cover;
 }
 
 .expertise-subtitle {
@@ -402,6 +420,12 @@ h2.title,
 .comunication-inf > :nth-child(n + 2) {
   width: 770px;
   margin: 24px 0;
+}
+
+.comunication img {
+  width: 570px;
+  height: 320px;
+  object-fit: cover;
 }
 
 .comunication-inf::after {
@@ -435,6 +459,12 @@ h2.title,
 .together-inf > :nth-child(n + 2) {
   margin-top: 24px;
 }
+
+.together img {
+  height: 570px;
+  width: 780px;
+  object-fit: cover;
+}
 /* =========================== TOGETHER END ============================== */
 
 /* =========================== FOOTER START ============================== */
@@ -457,6 +487,12 @@ h2.title,
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.socials-box-wrapper img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .socials-box-wrapper > :nth-child(n + 2) {
