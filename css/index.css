@@ -209,10 +209,11 @@ span,
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --scrollbar-track-color: hsl(var(--hue), 0%, 87%);
   --shadow: hsla(var(--hue), 0%, 20%, 0.3);
+  --bg-lightnes-gray: hsla(var(--hue), 0%, 76%, 0.1);
 }
 
 :focus {
-  outline: 2px solid var(--system-color);
+  outline: 1px solid var(--system-color);
 }
 
 .container {
@@ -230,7 +231,6 @@ h2.title,
   font-size: 64px;
   font-weight: 700;
   line-height: 1.23;
-  text-align: center;
   color: var(--black);
 }
 
@@ -280,15 +280,36 @@ h2.title,
   color: var(--black);
   font-family: "Gilroy";
 }
+
+.lined-title{
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  color: var(--middle-darkness-gray);
+}
+
+.lined-title::before, .lined-title::after{
+  content: '';
+  border-top: 1px solid currentColor;
+  flex-grow: 1;
+}
+
+.lined-title::after{
+  flex-grow: 5;
+}
+
+.lined-title>span{
+  margin: 0 20px;
+}
 /* =========================== COMMON END ============================== */
 
 /* =========================== HEADER START ============================== */
-.header {
-  padding-top: 52px;
+.header{
+  padding-top: 50px;
   padding-bottom: 80px;
 }
 
-.header > .container,
+.navbar,
 .nav {
   display: flex;
   align-items: center;
@@ -296,12 +317,12 @@ h2.title,
 }
 
 .nav > :nth-child(n + 2) {
-  margin-left: 40px;
+  margin-left: 15px;
 }
 
 .nav > li > a {
   position: relative;
-  padding: 10px 0;
+  padding: 50px 20px 15px 20px;
   font-weight: 600;
   display: flex;
   justify-content: center;
@@ -311,18 +332,19 @@ h2.title,
   content: "";
   position: absolute;
   bottom: 0;
-  width: 0;
-  height: 2px;
+  width: 100%;
+  height: 0;
   background-color: var(--system-color);
-  transition: 0.24s;
+  transition: 0.35s;
+  z-index: -1;
 }
 
 .nav > li > a:hover::before {
-  width: 100%;
+  height: 100%;
 }
 
 .nav > li > a:hover {
-  color: var(--system-color);
+  color: var(--white);
 }
 /* =========================== HEADER END ============================== */
 
@@ -373,11 +395,53 @@ h2.title,
 }
 /* =========================== BRANDS END ============================== */
 
+/* =========================== SERVICES START ============================== */
+.services{
+  padding: 100px 0;
+  background-color: var(--bg-lightnes-gray);
+}
+
+.services-boxes-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.services-box{
+  width: 390px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.services-box:nth-child(1){
+  margin-bottom: 80px;
+}
+
+.services-box img{
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+}
+
+.services-box-inf{
+  width: 290px;
+}
+
+h2.services-title {
+  font-weight: 600;
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+/* =========================== SERVICES END ============================== */
+
 /* =========================== EXPERTISE START ============================== */
 .expertise {
   padding-bottom: 123px;
+  position: relative;
 }
 
+.expertise,
 .expertise-cards-wrapper {
   display: flex;
   justify-content: space-between;
@@ -403,7 +467,7 @@ h2.title,
 
 /* =========================== COMUNICATION START ============================== */
 .comunication {
-  background-color: var(--lightness-gray);
+  background-color: var(--bg-lightnes-gray);
   padding-top: 128px;
   padding-bottom: 65px;
 }
@@ -523,6 +587,11 @@ h2.title,
   font-size: 30px;
   width: 40px;
   height: 40px;
-  box-shadow: 0 -10px 20px 0 var(--shadow);
+  box-shadow: 0 -5px 20px 0 var(--shadow);
+  transition: .25s;
+}
+
+.to-top-link:hover{
+  transform: translateY(-7px);
 }
 /* =========================== TO TOP LINK END ============================== */
